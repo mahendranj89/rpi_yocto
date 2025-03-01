@@ -1371,3 +1371,479 @@ Server will shut down after all clients exit.
 2398505 21:07:48.918619 Exiting (socket: True)
 2398505 21:07:49.017839 Exiting as we could obtain the lock
 sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/mahendran/projects/rpi_yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+7321 11:25:07.613647 --- Starting bitbake server pid 7321 at 2025-03-01 11:25:07.613623 ---
+7321 11:25:07.614429 Started bitbake server pid 7321
+7321 11:25:07.614686 Entering server connection loop
+7321 11:25:07.614707 Lockfile is: /home/mahendran/projects/rpi_yocto/poky/build/bitbake.lock
+Socket is /home/mahendran/projects/rpi_yocto/poky/build/bitbake.sock (True)
+7321 11:25:07.615150 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+7321 11:25:07.616138 Processing Client
+7321 11:25:07.616174 Connecting Client
+7321 11:25:07.616492 Running command ['setFeatures', [2, 1]]
+7321 11:25:07.616526 Sending reply (None, None)
+7321 11:25:07.616586 Command Completed (socket: True)
+7321 11:25:07.617529 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/mahendran/projects/rpi_yocto/poky/build', 'LOGNAME': 'mahendran', 'HOME': '/home/mahendran', 'BBPATH': '/home/mahendran/projects/rpi_yocto/poky/build', 'USER': 'mahendran', 'PATH': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/vivobook:@/tmp/.ICE-unix/1534,unix/vivobook:/tmp/.ICE-unix/1534', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.97.2', 'OE_ADDED_PATHS': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '1749', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7AFP22', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'USERNAME': 'mahendran', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cb770285_66cd_4b74_9c8f_849c12ba495c', 'CHROME_DESKTOP': 'code.desktop', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/mahendran/projects/rpi_yocto/poky/bitbake/lib:', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3948222497.sock', 'GNOME_TERMINAL_SERVICE': ':1.102', 'DISPLAY': ':0', 'SHLVL': '2', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/mahendran/projects/rpi_yocto/poky/build', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/mahendran/projects/rpi_yocto/poky', 'TERM_PROGRAM': 'vscode', '_': '/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake'}, ['/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake', 'raspberrypi-utils']]
+7321 11:25:08.013529 Base config valid
+7321 11:25:08.034230 Sending reply (None, None)
+7321 11:25:08.034394 Command Completed (socket: True)
+7321 11:25:08.034698 Running command ['getVariable', 'BBINCLUDELOGS']
+7321 11:25:08.034813 Sending reply ('yes', None)
+7321 11:25:08.034858 Command Completed (socket: True)
+7321 11:25:08.035015 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+7321 11:25:08.035081 Sending reply (None, None)
+7321 11:25:08.035126 Command Completed (socket: True)
+7321 11:25:08.035281 Running command ['getSetVariable', 'BB_CONSOLELOG']
+7321 11:25:08.035433 Sending reply ('/home/mahendran/projects/rpi_yocto/poky/build/tmp/log/cooker/raspberrypi3-64/20250301102507.log', None)
+7321 11:25:08.035483 Command Completed (socket: True)
+7321 11:25:08.035617 Running command ['getSetVariable', 'BB_LOGCONFIG']
+7321 11:25:08.035691 Sending reply (None, None)
+7321 11:25:08.035728 Command Completed (socket: True)
+7321 11:25:08.038010 Running command ['getUIHandlerNum']
+7321 11:25:08.038056 Sending reply (1, None)
+7321 11:25:08.038111 Command Completed (socket: True)
+7321 11:25:08.038273 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+7321 11:25:08.038313 Sending reply (True, None)
+7321 11:25:08.038358 Command Completed (socket: True)
+7321 11:25:08.038527 Running command ['getVariable', 'BB_DEFAULT_TASK']
+7321 11:25:08.038611 Sending reply ('build', None)
+7321 11:25:08.038675 Command Completed (socket: True)
+7321 11:25:08.038784 Running command ['setConfig', 'cmd', 'build']
+7321 11:25:08.038833 Sending reply (None, None)
+7321 11:25:08.038877 Command Completed (socket: True)
+7321 11:25:08.039055 Running command ['buildTargets', ['raspberrypi-utils'], 'build']
+7321 11:25:08.039139 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x73ceeb9b51b0>>
+7321 11:25:08.039152 Sending reply (True, None)
+7321 11:25:08.039201 Command Completed (socket: True)
+7321 11:25:08.120241 Parsing started
+7321 11:25:08.309373 Parse cache valid
+7321 11:25:39.750310 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x73ceeb9b51b0>> at idleFinish
+7321 11:25:40.001093 Processing Client
+7321 11:25:40.001185 Disconnecting Client (socket: True)
+7321 11:25:40.001451 Parse cache invalidated
+7321 11:25:40.001469 No timeout, exiting.
+7321 11:25:40.101639 Exiting (socket: True)
+7321 11:25:40.108669 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/mahendran/projects/rpi_yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+7603 11:26:29.081560 --- Starting bitbake server pid 7603 at 2025-03-01 11:26:29.081525 ---
+7603 11:26:29.082343 Started bitbake server pid 7603
+7603 11:26:29.082605 Entering server connection loop
+7603 11:26:29.082626 Lockfile is: /home/mahendran/projects/rpi_yocto/poky/build/bitbake.lock
+Socket is /home/mahendran/projects/rpi_yocto/poky/build/bitbake.sock (True)
+7603 11:26:29.083146 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+7603 11:26:29.084119 Processing Client
+7603 11:26:29.084157 Connecting Client
+7603 11:26:29.084491 Running command ['setFeatures', [2, 1]]
+7603 11:26:29.084527 Sending reply (None, None)
+7603 11:26:29.084589 Command Completed (socket: True)
+7603 11:26:29.085426 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/mahendran/projects/rpi_yocto/poky/build', 'LOGNAME': 'mahendran', 'HOME': '/home/mahendran', 'BBPATH': '/home/mahendran/projects/rpi_yocto/poky/build', 'USER': 'mahendran', 'PATH': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/vivobook:@/tmp/.ICE-unix/1534,unix/vivobook:/tmp/.ICE-unix/1534', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.97.2', 'OE_ADDED_PATHS': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '1749', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7AFP22', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'USERNAME': 'mahendran', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cb770285_66cd_4b74_9c8f_849c12ba495c', 'CHROME_DESKTOP': 'code.desktop', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/mahendran/projects/rpi_yocto/poky/bitbake/lib:', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3948222497.sock', 'GNOME_TERMINAL_SERVICE': ':1.102', 'DISPLAY': ':0', 'SHLVL': '2', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/mahendran/projects/rpi_yocto/poky/build', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/mahendran/projects/rpi_yocto/poky', 'TERM_PROGRAM': 'vscode', '_': '/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake'}, ['/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake', 'raspberrypi-utils']]
+7603 11:26:29.434213 Base config valid
+7603 11:26:29.452551 Sending reply (None, None)
+7603 11:26:29.452724 Command Completed (socket: True)
+7603 11:26:29.453011 Running command ['getVariable', 'BBINCLUDELOGS']
+7603 11:26:29.453134 Sending reply ('yes', None)
+7603 11:26:29.453178 Command Completed (socket: True)
+7603 11:26:29.453333 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+7603 11:26:29.453396 Sending reply (None, None)
+7603 11:26:29.453440 Command Completed (socket: True)
+7603 11:26:29.453618 Running command ['getSetVariable', 'BB_CONSOLELOG']
+7603 11:26:29.453769 Sending reply ('/home/mahendran/projects/rpi_yocto/poky/build/tmp/log/cooker/raspberrypi3-64/20250301102629.log', None)
+7603 11:26:29.453818 Command Completed (socket: True)
+7603 11:26:29.453967 Running command ['getSetVariable', 'BB_LOGCONFIG']
+7603 11:26:29.454041 Sending reply (None, None)
+7603 11:26:29.454086 Command Completed (socket: True)
+7603 11:26:29.456299 Running command ['getUIHandlerNum']
+7603 11:26:29.456345 Sending reply (1, None)
+7603 11:26:29.456400 Command Completed (socket: True)
+7603 11:26:29.456613 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+7603 11:26:29.456658 Sending reply (True, None)
+7603 11:26:29.456711 Command Completed (socket: True)
+7603 11:26:29.456832 Running command ['getVariable', 'BB_DEFAULT_TASK']
+7603 11:26:29.456886 Sending reply ('build', None)
+7603 11:26:29.456928 Command Completed (socket: True)
+7603 11:26:29.457092 Running command ['setConfig', 'cmd', 'build']
+7603 11:26:29.457143 Sending reply (None, None)
+7603 11:26:29.457197 Command Completed (socket: True)
+7603 11:26:29.457373 Running command ['buildTargets', ['raspberrypi-utils'], 'build']
+7603 11:26:29.457474 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7584a5e751b0>>
+7603 11:26:29.457486 Sending reply (True, None)
+7603 11:26:29.457535 Command Completed (socket: True)
+7603 11:26:29.497758 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 8279 
+Server will shut down after all clients exit.
+7603 11:26:32.130108 Parse cache valid
+7603 11:26:47.824976 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x758499049bd0>
+7603 11:26:47.825013 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7584a5e751b0>>
+7603 11:26:54.800816 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x758499049bd0> at idleFinish
+7603 11:26:55.052029 Processing Client
+7603 11:26:55.052216 Disconnecting Client (socket: True)
+7603 11:26:55.052708 Parse cache invalidated
+7603 11:26:55.052745 No timeout, exiting.
+7603 11:26:55.153305 Exiting (socket: True)
+7603 11:26:55.161728 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/mahendran/projects/rpi_yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+8983 11:31:12.344085 --- Starting bitbake server pid 8983 at 2025-03-01 11:31:12.344062 ---
+8983 11:31:12.344870 Started bitbake server pid 8983
+8983 11:31:12.345125 Entering server connection loop
+8983 11:31:12.345145 Lockfile is: /home/mahendran/projects/rpi_yocto/poky/build/bitbake.lock
+Socket is /home/mahendran/projects/rpi_yocto/poky/build/bitbake.sock (True)
+8983 11:31:12.345603 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+8983 11:31:12.346761 Processing Client
+8983 11:31:12.346807 Connecting Client
+8983 11:31:12.347185 Running command ['setFeatures', [2, 1]]
+8983 11:31:12.347228 Sending reply (None, None)
+8983 11:31:12.347292 Command Completed (socket: True)
+8983 11:31:12.348157 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/mahendran/projects/rpi_yocto/poky/build', 'LOGNAME': 'mahendran', 'HOME': '/home/mahendran', 'BBPATH': '/home/mahendran/projects/rpi_yocto/poky/build', 'USER': 'mahendran', 'PATH': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/vivobook:@/tmp/.ICE-unix/1534,unix/vivobook:/tmp/.ICE-unix/1534', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.97.2', 'OE_ADDED_PATHS': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '1749', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7AFP22', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'USERNAME': 'mahendran', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cb770285_66cd_4b74_9c8f_849c12ba495c', 'CHROME_DESKTOP': 'code.desktop', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/mahendran/projects/rpi_yocto/poky/bitbake/lib:', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3948222497.sock', 'GNOME_TERMINAL_SERVICE': ':1.102', 'DISPLAY': ':0', 'SHLVL': '2', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/mahendran/projects/rpi_yocto/poky/build', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/mahendran/projects/rpi_yocto/poky/build/tmp', 'TERM_PROGRAM': 'vscode', '_': '/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake'}, ['/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake', 'raspberrypi-utils']]
+8983 11:31:12.692816 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 9220 
+Server will shut down after all clients exit.
+8983 11:31:12.711507 Sending reply (None, None)
+8983 11:31:12.711726 Command Completed (socket: True)
+8983 11:31:12.711994 Running command ['getVariable', 'BBINCLUDELOGS']
+8983 11:31:12.712122 Sending reply ('yes', None)
+8983 11:31:12.712168 Command Completed (socket: True)
+8983 11:31:12.712320 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+8983 11:31:12.712386 Sending reply (None, None)
+8983 11:31:12.712430 Command Completed (socket: True)
+8983 11:31:12.712574 Running command ['getSetVariable', 'BB_CONSOLELOG']
+8983 11:31:12.712731 Sending reply ('/home/mahendran/projects/rpi_yocto/poky/build/tmp/log/cooker/raspberrypi3-64/20250301103112.log', None)
+8983 11:31:12.712780 Command Completed (socket: True)
+8983 11:31:12.712922 Running command ['getSetVariable', 'BB_LOGCONFIG']
+8983 11:31:12.712980 Sending reply (None, None)
+8983 11:31:12.713024 Command Completed (socket: True)
+8983 11:31:12.715188 Running command ['getUIHandlerNum']
+8983 11:31:12.715236 Sending reply (1, None)
+8983 11:31:12.715291 Command Completed (socket: True)
+8983 11:31:12.715471 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+8983 11:31:12.715506 Sending reply (True, None)
+8983 11:31:12.715556 Command Completed (socket: True)
+8983 11:31:12.715739 Running command ['getVariable', 'BB_DEFAULT_TASK']
+8983 11:31:12.715797 Sending reply ('build', None)
+8983 11:31:12.715851 Command Completed (socket: True)
+8983 11:31:12.715951 Running command ['setConfig', 'cmd', 'build']
+8983 11:31:12.715999 Sending reply (None, None)
+8983 11:31:12.716041 Command Completed (socket: True)
+8983 11:31:12.716219 Running command ['buildTargets', ['raspberrypi-utils'], 'build']
+8983 11:31:12.716310 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x70af4d6651b0>>
+8983 11:31:12.716323 Sending reply (True, None)
+8983 11:31:12.716372 Command Completed (socket: True)
+8983 11:31:12.759048 Parsing started
+8983 11:31:15.337634 Parse cache valid
+8983 11:31:17.038776 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x70af41d8d240>
+8983 11:31:17.038827 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x70af4d6651b0>>
+8983 11:31:20.277067 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x70af41d8d240> at idleFinish
+8983 11:31:20.528184 Processing Client
+8983 11:31:20.528354 Disconnecting Client (socket: True)
+8983 11:31:20.528856 Parse cache invalidated
+8983 11:31:20.528924 No timeout, exiting.
+8983 11:31:20.629268 Exiting (socket: True)
+8983 11:31:20.637275 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/mahendran/projects/rpi_yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+9752 11:41:56.415592 --- Starting bitbake server pid 9752 at 2025-03-01 11:41:56.415569 ---
+9752 11:41:56.416368 Started bitbake server pid 9752
+9752 11:41:56.416629 Entering server connection loop
+9752 11:41:56.416650 Lockfile is: /home/mahendran/projects/rpi_yocto/poky/build/bitbake.lock
+Socket is /home/mahendran/projects/rpi_yocto/poky/build/bitbake.sock (True)
+9752 11:41:56.417152 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+9752 11:41:56.418062 Processing Client
+9752 11:41:56.418100 Connecting Client
+9752 11:41:56.418411 Running command ['setFeatures', [2, 1]]
+9752 11:41:56.418446 Sending reply (None, None)
+9752 11:41:56.418499 Command Completed (socket: True)
+9752 11:41:56.419337 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/mahendran/projects/rpi_yocto/poky/build', 'LOGNAME': 'mahendran', 'HOME': '/home/mahendran', 'BBPATH': '/home/mahendran/projects/rpi_yocto/poky/build', 'USER': 'mahendran', 'PATH': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/vivobook:@/tmp/.ICE-unix/1534,unix/vivobook:/tmp/.ICE-unix/1534', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.97.2', 'OE_ADDED_PATHS': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '1749', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7AFP22', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'USERNAME': 'mahendran', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cb770285_66cd_4b74_9c8f_849c12ba495c', 'CHROME_DESKTOP': 'code.desktop', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/mahendran/projects/rpi_yocto/poky/bitbake/lib:', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3948222497.sock', 'GNOME_TERMINAL_SERVICE': ':1.102', 'DISPLAY': ':0', 'SHLVL': '2', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/mahendran/projects/rpi_yocto/poky/build', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/mahendran/projects/rpi_yocto/poky/build/tmp', 'TERM_PROGRAM': 'vscode', '_': '/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake'}, ['/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake', 'raspberrypi-utils']]
+9752 11:41:56.766910 Base config valid
+9752 11:41:56.785555 Sending reply (None, None)
+9752 11:41:56.785732 Command Completed (socket: True)
+9752 11:41:56.786015 Running command ['getVariable', 'BBINCLUDELOGS']
+9752 11:41:56.786140 Sending reply ('yes', None)
+9752 11:41:56.786186 Command Completed (socket: True)
+9752 11:41:56.786357 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+9752 11:41:56.786425 Sending reply (None, None)
+9752 11:41:56.786469 Command Completed (socket: True)
+9752 11:41:56.786592 Running command ['getSetVariable', 'BB_CONSOLELOG']
+9752 11:41:56.786751 Sending reply ('/home/mahendran/projects/rpi_yocto/poky/build/tmp/log/cooker/raspberrypi3-64/20250301104156.log', None)
+9752 11:41:56.786794 Command Completed (socket: True)
+9752 11:41:56.786944 Running command ['getSetVariable', 'BB_LOGCONFIG']
+9752 11:41:56.787016 Sending reply (None, None)
+9752 11:41:56.787060 Command Completed (socket: True)
+9752 11:41:56.789283 Running command ['getUIHandlerNum']
+9752 11:41:56.789331 Sending reply (1, None)
+9752 11:41:56.789385 Command Completed (socket: True)
+9752 11:41:56.789532 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+9752 11:41:56.789591 Sending reply (True, None)
+9752 11:41:56.789638 Command Completed (socket: True)
+9752 11:41:56.789804 Running command ['getVariable', 'BB_DEFAULT_TASK']
+9752 11:41:56.789857 Sending reply ('build', None)
+9752 11:41:56.789910 Command Completed (socket: True)
+9752 11:41:56.790015 Running command ['setConfig', 'cmd', 'build']
+9752 11:41:56.790065 Sending reply (None, None)
+9752 11:41:56.790107 Command Completed (socket: True)
+9752 11:41:56.790285 Running command ['buildTargets', ['raspberrypi-utils'], 'build']
+9752 11:41:56.790373 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x716cd49791b0>>
+9752 11:41:56.790385 Sending reply (True, None)
+9752 11:41:56.790434 Command Completed (socket: True)
+9752 11:41:56.830701 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 9998 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 10018 
+Server will shut down after all clients exit.
+9752 11:41:59.446360 Parse cache valid
+9752 11:42:01.580487 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x716cc91c3640>
+9752 11:42:01.580530 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x716cd49791b0>>
+9752 11:42:05.975146 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x716cc91c3640> at idleFinish
+9752 11:42:06.225967 Processing Client
+9752 11:42:06.226114 Disconnecting Client (socket: True)
+9752 11:42:06.226468 Parse cache invalidated
+9752 11:42:06.226490 No timeout, exiting.
+9752 11:42:06.327114 Exiting (socket: True)
+9752 11:42:06.335492 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/mahendran/projects/rpi_yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+10381 11:43:30.400358 --- Starting bitbake server pid 10381 at 2025-03-01 11:43:30.400333 ---
+10381 11:43:30.401161 Started bitbake server pid 10381
+10381 11:43:30.401415 Entering server connection loop
+10381 11:43:30.401436 Lockfile is: /home/mahendran/projects/rpi_yocto/poky/build/bitbake.lock
+Socket is /home/mahendran/projects/rpi_yocto/poky/build/bitbake.sock (True)
+10381 11:43:30.402186 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+10381 11:43:30.402832 Processing Client
+10381 11:43:30.402871 Connecting Client
+10381 11:43:30.403185 Running command ['setFeatures', [2, 1]]
+10381 11:43:30.403220 Sending reply (None, None)
+10381 11:43:30.403288 Command Completed (socket: True)
+10381 11:43:30.404153 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/mahendran/projects/rpi_yocto/poky/build', 'LOGNAME': 'mahendran', 'HOME': '/home/mahendran', 'BBPATH': '/home/mahendran/projects/rpi_yocto/poky/build', 'USER': 'mahendran', 'PATH': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/vivobook:@/tmp/.ICE-unix/1534,unix/vivobook:/tmp/.ICE-unix/1534', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.97.2', 'OE_ADDED_PATHS': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '1749', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7AFP22', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'USERNAME': 'mahendran', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cb770285_66cd_4b74_9c8f_849c12ba495c', 'CHROME_DESKTOP': 'code.desktop', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/mahendran/projects/rpi_yocto/poky/bitbake/lib:', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3948222497.sock', 'GNOME_TERMINAL_SERVICE': ':1.102', 'DISPLAY': ':0', 'SHLVL': '2', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/mahendran/projects/rpi_yocto/poky/build', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/mahendran/projects/rpi_yocto/poky/build/tmp', 'TERM_PROGRAM': 'vscode', '_': '/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake'}, ['/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake', 'raspberrypi-utils']]
+10381 11:43:30.757368 Base config valid
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 10621 
+Server will shut down after all clients exit.
+10381 11:43:30.776417 Sending reply (None, None)
+10381 11:43:30.776624 Command Completed (socket: True)
+10381 11:43:30.776910 Running command ['getVariable', 'BBINCLUDELOGS']
+10381 11:43:30.777032 Sending reply ('yes', None)
+10381 11:43:30.777078 Command Completed (socket: True)
+10381 11:43:30.777232 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+10381 11:43:30.777295 Sending reply (None, None)
+10381 11:43:30.777339 Command Completed (socket: True)
+10381 11:43:30.777493 Running command ['getSetVariable', 'BB_CONSOLELOG']
+10381 11:43:30.777674 Sending reply ('/home/mahendran/projects/rpi_yocto/poky/build/tmp/log/cooker/raspberrypi3-64/20250301104330.log', None)
+10381 11:43:30.777724 Command Completed (socket: True)
+10381 11:43:30.777874 Running command ['getSetVariable', 'BB_LOGCONFIG']
+10381 11:43:30.777938 Sending reply (None, None)
+10381 11:43:30.777981 Command Completed (socket: True)
+10381 11:43:30.780148 Running command ['getUIHandlerNum']
+10381 11:43:30.780201 Sending reply (1, None)
+10381 11:43:30.780246 Command Completed (socket: True)
+10381 11:43:30.780419 Running command ['setEventMask', 1, 20, {'BitBake.RunQueue.HashEquiv': 19, 'BitBake.SigGen.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+10381 11:43:30.780463 Sending reply (True, None)
+10381 11:43:30.780507 Command Completed (socket: True)
+10381 11:43:30.780634 Running command ['getVariable', 'BB_DEFAULT_TASK']
+10381 11:43:30.780681 Sending reply ('build', None)
+10381 11:43:30.780717 Command Completed (socket: True)
+10381 11:43:30.780868 Running command ['setConfig', 'cmd', 'build']
+10381 11:43:30.780904 Sending reply (None, None)
+10381 11:43:30.780950 Command Completed (socket: True)
+10381 11:43:30.781109 Running command ['buildTargets', ['raspberrypi-utils'], 'build']
+10381 11:43:30.781189 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7128b0bf11b0>>
+10381 11:43:30.781200 Sending reply (True, None)
+10381 11:43:30.781241 Command Completed (socket: True)
+10381 11:43:30.820260 Parsing started
+10381 11:43:33.270666 Parse cache valid
+10381 11:43:34.859040 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7128ab381bd0>
+10381 11:43:34.859084 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7128b0bf11b0>>
+10381 11:43:38.681840 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7128ab381bd0> at idleFinish
+10381 11:43:38.932577 Processing Client
+10381 11:43:38.932712 Disconnecting Client (socket: True)
+10381 11:43:38.932965 Parse cache invalidated
+10381 11:43:38.932985 No timeout, exiting.
+10381 11:43:39.033242 Exiting (socket: True)
+10381 11:43:39.039116 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/mahendran/projects/rpi_yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+11901 12:22:48.430430 --- Starting bitbake server pid 11901 at 2025-03-01 12:22:48.430402 ---
+11901 12:22:48.431234 Started bitbake server pid 11901
+11901 12:22:48.431489 Entering server connection loop
+11901 12:22:48.431510 Lockfile is: /home/mahendran/projects/rpi_yocto/poky/build/bitbake.lock
+Socket is /home/mahendran/projects/rpi_yocto/poky/build/bitbake.sock (True)
+11901 12:22:48.431996 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+11901 12:22:48.432737 Processing Client
+11901 12:22:48.432780 Connecting Client
+11901 12:22:48.433158 Running command ['setFeatures', [2, 1]]
+11901 12:22:48.433198 Sending reply (None, None)
+11901 12:22:48.433256 Command Completed (socket: True)
+11901 12:22:48.434028 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/mahendran/projects/rpi_yocto/poky/build', 'LOGNAME': 'mahendran', 'HOME': '/home/mahendran', 'BBPATH': '/home/mahendran/projects/rpi_yocto/poky/build', 'USER': 'mahendran', 'PATH': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/vivobook:@/tmp/.ICE-unix/1534,unix/vivobook:/tmp/.ICE-unix/1534', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.97.2', 'OE_ADDED_PATHS': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '1749', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7AFP22', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'USERNAME': 'mahendran', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cb770285_66cd_4b74_9c8f_849c12ba495c', 'CHROME_DESKTOP': 'code.desktop', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/mahendran/projects/rpi_yocto/poky/bitbake/lib:', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3948222497.sock', 'GNOME_TERMINAL_SERVICE': ':1.102', 'DISPLAY': ':0', 'SHLVL': '2', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/mahendran/projects/rpi_yocto/poky/build', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/mahendran/projects/rpi_yocto/poky/build/tmp', 'TERM_PROGRAM': 'vscode', '_': '/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake'}, ['/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake', 'raspberrypi-utils']]
+11901 12:22:48.790806 Base config valid
+11901 12:22:48.808525 Sending reply (None, None)
+11901 12:22:48.808713 Command Completed (socket: True)
+11901 12:22:48.808939 Running command ['getVariable', 'BBINCLUDELOGS']
+11901 12:22:48.809053 Sending reply ('yes', None)
+11901 12:22:48.809098 Command Completed (socket: True)
+11901 12:22:48.809248 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+11901 12:22:48.809310 Sending reply (None, None)
+11901 12:22:48.809353 Command Completed (socket: True)
+11901 12:22:48.809503 Running command ['getSetVariable', 'BB_CONSOLELOG']
+11901 12:22:48.809684 Sending reply ('/home/mahendran/projects/rpi_yocto/poky/build/tmp/log/cooker/raspberrypi3-64/20250301112248.log', None)
+11901 12:22:48.809733 Command Completed (socket: True)
+11901 12:22:48.809880 Running command ['getSetVariable', 'BB_LOGCONFIG']
+11901 12:22:48.809942 Sending reply (None, None)
+11901 12:22:48.809985 Command Completed (socket: True)
+11901 12:22:48.812069 Running command ['getUIHandlerNum']
+11901 12:22:48.812123 Sending reply (1, None)
+11901 12:22:48.812177 Command Completed (socket: True)
+11901 12:22:48.812322 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+11901 12:22:48.812362 Sending reply (True, None)
+11901 12:22:48.812405 Command Completed (socket: True)
+11901 12:22:48.812563 Running command ['getVariable', 'BB_DEFAULT_TASK']
+11901 12:22:48.812650 Sending reply ('build', None)
+11901 12:22:48.812705 Command Completed (socket: True)
+11901 12:22:48.812774 Running command ['setConfig', 'cmd', 'build']
+11901 12:22:48.812838 Sending reply (None, None)
+11901 12:22:48.812885 Command Completed (socket: True)
+11901 12:22:48.813107 Running command ['buildTargets', ['raspberrypi-utils'], 'build']
+11901 12:22:48.813207 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7a3a2f15d1b0>>
+11901 12:22:48.813219 Sending reply (True, None)
+11901 12:22:48.813306 Command Completed (socket: True)
+11901 12:22:48.838395 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 12140 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 12456 12457 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 12456 
+Server will shut down after all clients exit.
+11901 12:22:51.230462 Parse cache valid
+11901 12:22:53.397765 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7a3a2d95dd80>
+11901 12:22:53.397811 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7a3a2f15d1b0>>
+11901 12:22:59.514508 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x7a3a2d95dd80> at idleFinish
+11901 12:22:59.765222 Processing Client
+11901 12:22:59.765349 Disconnecting Client (socket: True)
+11901 12:22:59.765632 Parse cache invalidated
+11901 12:22:59.765649 No timeout, exiting.
+11901 12:22:59.865917 Exiting (socket: True)
+11901 12:22:59.874242 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/mahendran/projects/rpi_yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
+12964 12:25:26.557733 --- Starting bitbake server pid 12964 at 2025-03-01 12:25:26.557712 ---
+12964 12:25:26.558540 Started bitbake server pid 12964
+12964 12:25:26.558807 Entering server connection loop
+12964 12:25:26.558828 Lockfile is: /home/mahendran/projects/rpi_yocto/poky/build/bitbake.lock
+Socket is /home/mahendran/projects/rpi_yocto/poky/build/bitbake.sock (True)
+12964 12:25:26.559258 Accepting [<socket.socket fd=6, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>] ([])
+12964 12:25:26.560207 Processing Client
+12964 12:25:26.560244 Connecting Client
+12964 12:25:26.560592 Running command ['setFeatures', [2, 1]]
+12964 12:25:26.560643 Sending reply (None, None)
+12964 12:25:26.560693 Command Completed (socket: True)
+12964 12:25:26.561539 Running command ['updateConfig', {'halt': True, 'force': False, 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'postfile': [], 'server_timeout': None, 'nosetscene': False, 'setsceneonly': False, 'skipsetscene': False, 'runall': [], 'runonly': None, 'writeeventlog': None, 'build_verbose_shell': False, 'build_verbose_stdout': False, 'default_loglevel': 20, 'debug_domains': {}}, {'SHELL': '/bin/bash', 'BB_ENV_PASSTHROUGH_ADDITIONS': 'ALL_PROXY BBPATH_EXTRA BB_LOGCONFIG BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'PWD': '/home/mahendran/projects/rpi_yocto/poky/build', 'LOGNAME': 'mahendran', 'HOME': '/home/mahendran', 'BBPATH': '/home/mahendran/projects/rpi_yocto/poky/build', 'USER': 'mahendran', 'PATH': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'LC_ALL': 'en_US.UTF-8', 'SESSION_MANAGER': 'local/vivobook:@/tmp/.ICE-unix/1534,unix/vivobook:/tmp/.ICE-unix/1534', 'QT_ACCESSIBILITY': '1', 'COLORTERM': 'truecolor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'XDG_MENU_PREFIX': 'gnome-', 'TERM_PROGRAM_VERSION': '1.97.2', 'OE_ADDED_PATHS': '/home/mahendran/projects/rpi_yocto/poky/scripts:/home/mahendran/projects/rpi_yocto/poky/bitbake/bin:', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'LC_ADDRESS': 'de_DE.UTF-8', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'LC_NAME': 'de_DE.UTF-8', 'XMODIFIERS': '@im=ibus', 'DESKTOP_SESSION': 'ubuntu', 'LC_MONETARY': 'de_DE.UTF-8', 'GTK_MODULES': 'gail:atk-bridge', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XDG_SESSION_TYPE': 'wayland', 'SYSTEMD_EXEC_PID': '1749', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7AFP22', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'USERNAME': 'mahendran', 'IM_CONFIG_PHASE': '1', 'LC_PAPER': 'de_DE.UTF-8', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_CURRENT_DESKTOP': 'Unity', 'VTE_VERSION': '6800', 'WAYLAND_DISPLAY': 'wayland-0', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/cb770285_66cd_4b74_9c8f_849c12ba495c', 'CHROME_DESKTOP': 'code.desktop', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GNOME_SETUP_DISPLAY': ':1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_CLASS': 'user', 'PYTHONPATH': '/home/mahendran/projects/rpi_yocto/poky/bitbake/lib:', 'LC_IDENTIFICATION': 'de_DE.UTF-8', 'TERM': 'xterm-256color', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-3948222497.sock', 'GNOME_TERMINAL_SERVICE': ':1.102', 'DISPLAY': ':0', 'SHLVL': '2', 'LC_TELEPHONE': 'de_DE.UTF-8', 'QT_IM_MODULE': 'ibus', 'LC_MEASUREMENT': 'de_DE.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LC_TIME': 'de_DE.UTF-8', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'GDK_BACKEND': 'x11', 'GDMSESSION': 'ubuntu', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'BUILDDIR': '/home/mahendran/projects/rpi_yocto/poky/build', 'LC_NUMERIC': 'de_DE.UTF-8', 'OLDPWD': '/home/mahendran/projects/rpi_yocto/poky/build/tmp', 'TERM_PROGRAM': 'vscode', '_': '/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake'}, ['/home/mahendran/projects/rpi_yocto/poky/bitbake/bin/bitbake', 'core-image-minimal']]
+12964 12:25:26.914176 Base config valid
+12964 12:25:26.933270 Sending reply (None, None)
+12964 12:25:26.933466 Command Completed (socket: True)
+12964 12:25:26.933748 Running command ['getVariable', 'BBINCLUDELOGS']
+12964 12:25:26.933877 Sending reply ('yes', None)
+12964 12:25:26.933922 Command Completed (socket: True)
+12964 12:25:26.934074 Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+12964 12:25:26.934141 Sending reply (None, None)
+12964 12:25:26.934185 Command Completed (socket: True)
+12964 12:25:26.934336 Running command ['getSetVariable', 'BB_CONSOLELOG']
+12964 12:25:26.934494 Sending reply ('/home/mahendran/projects/rpi_yocto/poky/build/tmp/log/cooker/raspberrypi3-64/20250301112526.log', None)
+12964 12:25:26.934552 Command Completed (socket: True)
+12964 12:25:26.934708 Running command ['getSetVariable', 'BB_LOGCONFIG']
+12964 12:25:26.934770 Sending reply (None, None)
+12964 12:25:26.934814 Command Completed (socket: True)
+12964 12:25:26.937132 Running command ['getUIHandlerNum']
+12964 12:25:26.937177 Sending reply (1, None)
+12964 12:25:26.937232 Command Completed (socket: True)
+12964 12:25:26.937456 Running command ['setEventMask', 1, 20, {'BitBake.SigGen.HashEquiv': 19, 'BitBake.RunQueue.HashEquiv': 19}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+12964 12:25:26.937512 Sending reply (True, None)
+12964 12:25:26.937574 Command Completed (socket: True)
+12964 12:25:26.937750 Running command ['getVariable', 'BB_DEFAULT_TASK']
+12964 12:25:26.937805 Sending reply ('build', None)
+12964 12:25:26.937848 Command Completed (socket: True)
+12964 12:25:26.938014 Running command ['setConfig', 'cmd', 'build']
+12964 12:25:26.938062 Sending reply (None, None)
+12964 12:25:26.938117 Command Completed (socket: True)
+12964 12:25:26.938299 Running command ['buildTargets', ['core-image-minimal'], 'build']
+12964 12:25:26.938391 Registering idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7590ab9151b0>>
+12964 12:25:26.938404 Sending reply (True, None)
+12964 12:25:26.938464 Command Completed (socket: True)
+12964 12:25:26.975954 Parsing started
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 13511 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 24425 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 24618 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 26268 26282 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 26282 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 28983 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 29508 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 4
+Client pids: 31061 31067 31993 31999 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 31061 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 35236 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 35328 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 35370 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 36612 36618 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 36612 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 36616 36617 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 36617 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 37663 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44500 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44513 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 3
+Client pids: 44531 44543 44544 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 2
+Client pids: 44531 44544 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44544 
+Server will shut down after all clients exit.
+Server refused shutdown.  Remaining client fds: 1
+Client pids: 44781 
+Server will shut down after all clients exit.
+12964 12:25:27.182556 Parse cache valid
+12964 12:26:07.879422 Registering idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x75909edf28c0>
+12964 12:26:07.879462 Removing idle function <bound method Command.runAsyncCommand of <bb.command.Command object at 0x7590ab9151b0>>
+12964 12:27:49.046217 Removing idle function <function BBCooker.buildTargets.<locals>.buildTargetsIdle at 0x75909edf28c0> at idleFinish
+12964 12:27:49.296870 Processing Client
+12964 12:27:49.296983 Disconnecting Client (socket: True)
+12964 12:27:49.297237 Parse cache invalidated
+12964 12:27:49.297255 No timeout, exiting.
+12964 12:27:49.397522 Exiting (socket: True)
+12964 12:27:49.404995 Exiting as we could obtain the lock
+sys:1: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/mahendran/projects/rpi_yocto/poky/build/bitbake-cookerdaemon.log' mode='a+' encoding='UTF-8'>
