@@ -1,6 +1,6 @@
 # Embedded Linux with Yocto Project
 
-This project was created as part of my learning journey to understand **Embedded Linux** using **Yocto**.
+This project was created as part of my learning journey to understand **Embedded Linux** using **Yocto**. The project is **built and tested for the Raspberry Pi 3 Model B+** board.
 
 ## Step-by-Step Approach
 
